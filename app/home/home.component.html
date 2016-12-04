@@ -1,2 +1,9 @@
 <h1>Welcome to My Food Truck App</h1>
-<p tooltip [myHighlight]="color" [defaultColor]="''">Highlight me!</p>
+<p [myHighlight]="color" [defaultColor]="'violet'">Highlight me!</p>
+
+<tooltip-content #myTooltip>
+      <b>Very</b> <span style="color: #C21F39">Dynamic</span> <span style="color: #00b3ee">Reusable</span>
+      <b><i><span style="color: #ffc520">Tooltip With</span></i></b> <small>Html support</small>.
+</tooltip-content>
+
+ <button [tooltip]="myTooltip">hover this button to see a tooltip</button>

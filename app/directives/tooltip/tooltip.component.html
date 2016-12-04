@@ -10,3 +10,15 @@
         {{ content }}
     </div>
 </div>-->
+
+<div class="tooltip {{ placement }}"
+     [style.top]="top + 'px'"
+     [style.left]="left + 'px'"
+     [class.in]="isIn"
+     [class.fade]="isFade" role="tooltip">
+  <div class="tooltip-arrow"></div>
+  <div class="tooltip-inner">
+    <ng-content></ng-content>
+    {{ content }}
+  </div>
+</div>

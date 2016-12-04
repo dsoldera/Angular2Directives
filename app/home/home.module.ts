@@ -5,7 +5,7 @@ import { HomeComponent }   from './home.component';
 
 import { HomeRoutingModule } from './home-routing.module';
 
-// import { TooltipModule } from '../directives/tooltip/tooltip.module';
+import { TooltipModule } from '../directives/tooltip/tooltip.module';
 
 import { HighlightDirective } from '../directives/highlight.directive';
 
@@ -13,7 +13,7 @@ import { HighlightDirective } from '../directives/highlight.directive';
 @NgModule({
   imports: [
     CommonModule,
-    // TooltipModule,
+    TooltipModule,
     HomeRoutingModule
   ],
   exports: [],
