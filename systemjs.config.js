@@ -27,13 +27,6 @@
       // other libraries
       'rxjs': 'npm:rxjs',
       'ng2-bootstrap': 'npm:ng2-bootstrap',
-      'text-mask-core': 'npm:text-mask-core',
-      'angular2-text-mask': 'npm:angular2-text-mask/dist/angular2TextMask.js',
-      'materialize-css': 'npm:materialize-css',
-      'angular2-materialize': 'npm:angular2-materialize',
-      'moment': 'npm:ng2-bootstrap/node_modules/moment/moment',
-      'ng2-select': 'npm:ng2-select',
-      'jquery': 'https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js',
     },
     // packages tells the System loader how to load when no filename and/or no extension
     packages: {
@@ -44,12 +37,7 @@
       rxjs: {
         defaultExtension: 'js'
       },
-      'ng2-bootstrap': { main: 'ng2-bootstrap', defaultExtension: 'js' },
-      'text-mask-core': { defaultExtension: 'js' },
-      'angular2-text-mask': { defaultExtension: 'js'},
-      'materialize-css': { main: 'js/materialize' },
-      'angular2-materialize' : { main: 'dist/index', defaultExtension: 'js' },
-      'ng2-select': { defaultExtension: 'js', main: 'ng2-select.js' }
+      'ng2-bootstrap': { main: 'ng2-bootstrap', defaultExtension: 'js' }
     }
   });
 })(this);
