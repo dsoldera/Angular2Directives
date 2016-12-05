@@ -9,11 +9,14 @@ import { TooltipModule } from '../directives/tooltip/tooltip.module';
 
 import { HighlightDirective } from '../directives/highlight.directive';
 
+import { ModalService } from '../shared/index';
+import { ModalModule } from '../shared/modal/modal.module';
 
 @NgModule({
   imports: [
     CommonModule,
     TooltipModule,
+    ModalModule,
     HomeRoutingModule
   ],
   exports: [],
@@ -21,7 +24,9 @@ import { HighlightDirective } from '../directives/highlight.directive';
     HomeComponent,
     HighlightDirective
   ],
-  providers: [],
+  providers: [
+    ModalService
+  ],
 })
 
 export class HomeModule { }
